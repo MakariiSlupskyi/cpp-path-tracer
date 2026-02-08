@@ -13,3 +13,6 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
   glfw
   glad::glad
 )
+
+file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/src/shader/shader.frag"
+     DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/shader")
